@@ -1,0 +1,14 @@
+%html
+  %head
+    %title= title
+    %link{ rel: 'stylesheet', href: '/style.css' }
+  %body{ style: 'background-color:#000;color:#666;' }
+    .content= title
+    %table
+      %tbody
+        - for(var i=0;i<data.length;i++)
+          %tr{ id: 'datarow_' + i }
+            - for(var j=0;j<data[i].length;j++)
+              %td{ id: 'datacell_' + i + '_' + j, class: 'datacell cell_' + (data[i][j]==0?"on":"off"), style: 'font-family:Helvetica;font-size:8px; padding:1px; padding-right:5px; padding-left:5px; cursor:pointer; background-color: rgb(' + (data[i][j]==0?'32,32,32':'200,200,210') + ')' }= ("o")
+    %script{ src: 'http://code.jquery.com/jquery-1.4.2.min.js' }
+    %script{ src: '/public/javascript/ui.js' }
