@@ -1,0 +1,16 @@
+
+                                    nodesynth
+
+nodesynth is a multiuser synthesizer/sequencer based on nodejs, and processingjs.
+
+Installation
+
+ * Install the latest version of nodejs ( http://github.com/ry/node )
+ * Install the latest version of Kiwi ( http://github.com/visionmedia/kiwi )
+ * Using Kiwi, install Express
+ * Run nodesynth in the nodesynth directory by typing: node app.js
+
+@corban, @Maciek416                                         weare.buildingsky.net
+_________________________________________________________________________________
+
+Copyright (c) 2010 Corban Brook and Maciej Adwent, released under the MIT license
